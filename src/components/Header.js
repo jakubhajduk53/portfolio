@@ -5,7 +5,7 @@ import { AiOutlineProject, AiOutlinePhone } from "react-icons/ai";
 
 function Header() {
   return (
-    <div className="flex justify-between w-full p-5 bg-orange-50">
+    <div className="flex justify-between w-full p-5 bg-orange-50 sticky top-0 border">
       <div className="ml-5 text-xl md:text-2xl italic">Jakub Hajduk</div>
       <div className="flex gap-5 mr-5">
         <Anchor href="#about" value="About" icon={BsCardHeading} />
