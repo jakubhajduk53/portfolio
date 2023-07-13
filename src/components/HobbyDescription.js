@@ -15,7 +15,7 @@ function HobbyDescription({ selectedHobby }) {
   };
 
   return (
-    <div className="h-36 border rounded-xl text-left break-words">
+    <div className="h-36 max-h-auto border rounded-xl text-left break-words">
       <p className="text-lg">{showHobbyDescription(selectedHobby)}</p>
     </div>
   );
