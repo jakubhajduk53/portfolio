@@ -8,7 +8,7 @@ function Hobby({ className, value, icon: Icon, isActive, onClick }) {
   );
 
   return (
-    <div className={hobbyClasses} onClick={onClick}>
+    <div className={hobbyClasses} onClick={onClick} tabIndex={0}>
       {Icon && <Icon className="shrink-0 text-3xl" />}
       {value}
     </div>
