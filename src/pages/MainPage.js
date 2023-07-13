@@ -1,11 +1,17 @@
 import Header from "../components/Header";
-import About from "../components/About";
+import About from "./About";
+import Technologies from "./Technologies";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 function MainPage() {
   return (
     <div>
       <Header />
       <About />
+      <Technologies />
+      <Projects />
+      <Contact />
     </div>
   );
 }
