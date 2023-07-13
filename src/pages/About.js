@@ -3,8 +3,8 @@ import { FaChess } from "react-icons/fa";
 import { BiFootball } from "react-icons/bi";
 import { GrGamepad } from "react-icons/gr";
 import { BsCodeSquare } from "react-icons/bs";
-import Hobby from "./Hobby";
-import HobbyDescription from "./HobbyDescription";
+import Hobby from "../components/Hobby";
+import HobbyDescription from "../components/HobbyDescription";
 import { useState } from "react";
 
 function About() {
