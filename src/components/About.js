@@ -24,7 +24,7 @@ function About() {
   return (
     <div
       id="about"
-      className="flex flex-col items-center justify-center text-center gap-5 w-full"
+      className="flex flex-col items-center justify-center text-center gap-5 w-full pt-10"
     >
       <div>
         <p className="text-2xl">Hi, my name is Jacob</p>
@@ -40,9 +40,9 @@ function About() {
         <p className="text-2xl">I am {myAge} years old Frontend Developer</p>
       </div>
       <PiDiamondsFourBold />
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 w-[70ch]">
         <p className="text-2xl">My hobbies</p>
-        <div className="flex gap-2">
+        <div className="flex gap-2 justify-center">
           <Hobby
             value="Chess"
             icon={FaChess}
