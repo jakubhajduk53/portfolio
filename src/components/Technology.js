@@ -8,8 +8,8 @@ function Technology({ className, name, date, icon: Icon }) {
 
   return (
     <div className={technologyClasses}>
-      {Icon && <Icon className="shrink-0 text-3xl" />}
-      <p>{name}</p>
+      {Icon && <Icon className="shrink-0 text-5xl" />}
+      <p className="text-2xl">{name}</p>
       <p>Started in: {date}</p>
     </div>
   );
