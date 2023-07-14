@@ -24,7 +24,7 @@ function About() {
   return (
     <div
       id="about"
-      className="flex flex-col items-center justify-center text-center gap-10 w-full"
+      className="flex flex-col items-center justify-center text-center gap-10 w-full h-screen "
     >
       <div className="flex flex-col justify-center items-center pt-10 gap-5">
         <div>
