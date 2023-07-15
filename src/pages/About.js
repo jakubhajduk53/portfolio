@@ -22,27 +22,32 @@ function About() {
   };
 
   return (
-    <div id="about" className="grid text-center w-full h-screen max-h-screen">
-      <div className="grid justify-items-center pt-10">
+    <div
+      id="about"
+      className="grid content-center gap-5 text-center w-full h-screen max-h-screen"
+    >
+      <div className="grid justify-items-center">
         <div>
-          <p className="text-2xl">Hi, my name is Jacob</p>
+          <p className="text-xl md:text-2xl">Hi, my name is Jacob</p>
         </div>
         <div>
           <img
             src={require("../assets/photo.jpg")}
             alt="My photo"
-            className="w-36 border rounded-full"
+            className="w-24 sm:w-32 md:w-36 border rounded-full mt-8 mb-8"
           />
         </div>
         <div>
-          <p className="text-2xl">I am {myAge} years old Frontend Developer</p>
+          <p className="text-xl md:text-2xl">
+            I am {myAge} years old Frontend Developer
+          </p>
         </div>
       </div>
       <PiDiamondsFourBold className="justify-self-center place-self-center" />
-      <div className="grid justify-self-center justify-items-center place-items-center w-[70ch]">
-        <p className="text-2xl">My hobbies</p>
+      <div className="grid justify-self-center justify-items-center place-items-center">
+        <p className="text-xl md:text-2xl mb-4">My hobbies</p>
         <div className="grid gap-2">
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-4 gap-2 justify-items-center">
             <Hobby
               value="Chess"
               icon={FaChess}
