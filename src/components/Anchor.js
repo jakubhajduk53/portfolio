@@ -2,13 +2,13 @@ import classNames from "classnames";
 
 function Anchor({ className, href, value, icon: Icon }) {
   const anchorClasses = classNames(
-    "flex items-center justify-center gap-1 md:text-lg hover:text-orange-800",
+    "flex items-center justify-center text-sm sm:text-base md:text-lg md:hover:text-orange-800 md:hover:bg-transparent",
     className
   );
 
   return (
     <a href={href} className={anchorClasses}>
-      {Icon && <Icon className="shrink-0" />}
+      {Icon && <Icon />}
       {value}
     </a>
   );
