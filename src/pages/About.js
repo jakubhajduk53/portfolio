@@ -22,11 +22,8 @@ function About() {
   };
 
   return (
-    <div
-      id="about"
-      className="flex flex-col items-center justify-center text-center gap-10 w-full h-screen "
-    >
-      <div className="flex flex-col justify-center items-center pt-10 gap-5">
+    <div id="about" className="grid text-center w-full h-screen max-h-screen">
+      <div className="grid justify-items-center pt-10">
         <div>
           <p className="text-2xl">Hi, my name is Jacob</p>
         </div>
@@ -41,11 +38,11 @@ function About() {
           <p className="text-2xl">I am {myAge} years old Frontend Developer</p>
         </div>
       </div>
-      <PiDiamondsFourBold />
-      <div className="flex flex-col gap-5 w-[70ch]">
+      <PiDiamondsFourBold className="justify-self-center place-self-center" />
+      <div className="grid justify-self-center justify-items-center place-items-center w-[70ch]">
         <p className="text-2xl">My hobbies</p>
-        <div className="flex flex-col gap-2">
-          <div className="flex gap-2 justify-center">
+        <div className="grid gap-2">
+          <div className="grid grid-cols-4 gap-2">
             <Hobby
               value="Chess"
               icon={FaChess}
@@ -74,7 +71,7 @@ function About() {
           <HobbyDescription selectedHobby={selectedHobby} />
         </div>
       </div>
-      <PiDiamondsFourBold />
+      <PiDiamondsFourBold className="justify-self-center place-self-center" />
     </div>
   );
 }
