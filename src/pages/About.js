@@ -3,9 +3,9 @@ import { FaChess } from "react-icons/fa";
 import { BiFootball } from "react-icons/bi";
 import { GrGamepad } from "react-icons/gr";
 import { BsCodeSquare } from "react-icons/bs";
-import Hobby from "../components/Hobby";
 import HobbyDescription from "../components/HobbyDescription";
 import { useState } from "react";
+import Box from "../components/Box";
 
 function About() {
   const [selectedHobby, setSelectedHobby] = useState("Chess");
@@ -48,29 +48,33 @@ function About() {
         <p className="text-xl md:text-2xl mb-4">My hobbies</p>
         <div className="grid gap-2">
           <div className="grid grid-cols-4 gap-2 justify-items-center">
-            <Hobby
+            <Box
               value="Chess"
               icon={FaChess}
               isActive={checkIsActive("Chess")}
               onClick={() => selectHobby("Chess")}
+              boxType="Hobby"
             />
-            <Hobby
+            <Box
               value="Football"
               icon={BiFootball}
               isActive={checkIsActive("Football")}
               onClick={() => selectHobby("Football")}
+              boxType="Hobby"
             />
-            <Hobby
+            <Box
               value="Gaming"
               icon={GrGamepad}
               isActive={checkIsActive("Gaming")}
               onClick={() => selectHobby("Gaming")}
+              boxType="Hobby"
             />
-            <Hobby
+            <Box
               value="Coding"
               icon={BsCodeSquare}
               isActive={checkIsActive("Coding")}
               onClick={() => selectHobby("Coding")}
+              boxType="Hobby"
             />
           </div>
           <HobbyDescription selectedHobby={selectedHobby} />
