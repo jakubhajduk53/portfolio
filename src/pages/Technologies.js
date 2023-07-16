@@ -22,7 +22,7 @@ function Technologies() {
   return (
     <div
       id="technologies"
-      className="grid content-center w-full h-screen bg-yellow-50 text-red-600"
+      className="grid content-center w-full h-screen bg-yellow-50 "
     >
       <div className="grid pt-10 gap-5 text-center justify-items-center place-items-center">
         <div>
