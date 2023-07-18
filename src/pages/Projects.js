@@ -52,7 +52,6 @@ function Projects() {
           src={require("../assets/cars-app1.png")}
           className="w-full h-full object-fill"
           alt="Cars Project 1"
-          name="Cars App"
         />
         <img
           src={require("../assets/cars-app2.png")}
