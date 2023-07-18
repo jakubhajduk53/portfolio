@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-bottom: 4rem;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    scroll-padding: 8rem;
+  }
+}
