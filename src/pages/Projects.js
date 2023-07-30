@@ -29,6 +29,16 @@ function Projects() {
         return "Cars App - Sell Your Car";
       case 3:
         return "Cars App - Menu";
+      case 4:
+        return "Meal App - Main Page";
+      case 5:
+        return "Meal App - Categories";
+      case 6:
+        return "Meal App - Category Item";
+      case 7:
+        return "Meal App - Areas";
+      case 8:
+        return "Meal App - Area Item";
       default:
         return;
     }
@@ -67,6 +77,31 @@ function Projects() {
           src={require("../assets/cars-app4.png")}
           className="w-full h-full"
           alt="Cars Project 4"
+        />
+        <img
+          src={require("../assets/meal-app1.png")}
+          className="w-full h-full"
+          alt="Meal App 1"
+        />
+        <img
+          src={require("../assets/meal-app2.png")}
+          className="w-full h-full"
+          alt="Meal App 2"
+        />
+        <img
+          src={require("../assets/meal-app3.png")}
+          className="w-full h-full"
+          alt="Meal App 3"
+        />
+        <img
+          src={require("../assets/meal-app4.png")}
+          className="w-full h-full"
+          alt="Meal App 4"
+        />
+        <img
+          src={require("../assets/meal-app5.png")}
+          className="w-full h-full"
+          alt="Meal App5"
         />
       </Carousel>
       <div className="self-start mb-5 text-lg md:text-xl row-span-1">
