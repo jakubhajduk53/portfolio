@@ -16,7 +16,7 @@ function HobbyDescription({ selectedHobby }) {
 
   return (
     <div className="h-36 w-[33ch] sm:w-[49ch] md:w-[70ch] max-h-auto border rounded-xl text-left break-words">
-      <p className="text-sm sm:text-base md:text-lg">
+      <p className="text-sm sm:text-base md:text-lg p-2">
         {showHobbyDescription(selectedHobby)}
       </p>
     </div>
