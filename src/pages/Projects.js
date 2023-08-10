@@ -1,5 +1,6 @@
 import { Carousel } from "flowbite-react";
 import { useState } from "react";
+import * as Images from "../assets/index.js";
 
 function Projects() {
   const [currentSlide, setCurrentSlide] = useState(null);
@@ -19,29 +20,47 @@ function Projects() {
     },
   };
 
+  const projectDescriptions = [
+    {
+      value: "Cars App - Home",
+      imageSrc: Images.CarsApp1,
+    },
+    {
+      value: "Cars App - Cars For Sale",
+      imageSrc: Images.CarsApp2,
+    },
+    {
+      value: "Cars App - Sell Your Car",
+      imageSrc: Images.CarsApp3,
+    },
+    {
+      value: "Cars App - Menu",
+      imageSrc: Images.CarsApp4,
+    },
+    {
+      value: "Meal App - Main Page",
+      imageSrc: Images.MealApp1,
+    },
+    {
+      value: "Meal App - Categories",
+      imageSrc: Images.MealApp2,
+    },
+    {
+      value: "Meal App - Category Item",
+      imageSrc: Images.MealApp3,
+    },
+    {
+      value: "Meal App - Areas",
+      imageSrc: Images.MealApp4,
+    },
+    {
+      value: "Meal App - Area Item",
+      imageSrc: Images.MealApp5,
+    },
+  ];
+
   const showSlideDescription = (slideId) => {
-    switch (slideId) {
-      case 0:
-        return "Cars App - Home";
-      case 1:
-        return "Cars App - Cars For Sale";
-      case 2:
-        return "Cars App - Sell Your Car";
-      case 3:
-        return "Cars App - Menu";
-      case 4:
-        return "Meal App - Main Page";
-      case 5:
-        return "Meal App - Categories";
-      case 6:
-        return "Meal App - Category Item";
-      case 7:
-        return "Meal App - Areas";
-      case 8:
-        return "Meal App - Area Item";
-      default:
-        return;
-    }
+    return projectDescriptions[slideId]?.value;
   };
 
   return (
@@ -58,51 +77,16 @@ function Projects() {
         onSlideChange={(slideId) => setCurrentSlide(slideId)}
         className="row-span-2 md:row-span-4 w-[90vw] md:w-[70vw]"
       >
-        <img
-          src={require("../assets/cars-app1.png")}
-          className="w-full h-full object-fill"
-          alt="Cars Project 1"
-        />
-        <img
-          src={require("../assets/cars-app2.png")}
-          className="w-full h-full"
-          alt="Cars Project 2"
-        />
-        <img
-          src={require("../assets/cars-app3.png")}
-          className="w-full h-full"
-          alt="Cars Project 3"
-        />
-        <img
-          src={require("../assets/cars-app4.png")}
-          className="w-full h-full"
-          alt="Cars Project 4"
-        />
-        <img
-          src={require("../assets/meal-app1.png")}
-          className="w-full h-full"
-          alt="Meal App 1"
-        />
-        <img
-          src={require("../assets/meal-app2.png")}
-          className="w-full h-full"
-          alt="Meal App 2"
-        />
-        <img
-          src={require("../assets/meal-app3.png")}
-          className="w-full h-full"
-          alt="Meal App 3"
-        />
-        <img
-          src={require("../assets/meal-app4.png")}
-          className="w-full h-full"
-          alt="Meal App 4"
-        />
-        <img
-          src={require("../assets/meal-app5.png")}
-          className="w-full h-full"
-          alt="Meal App5"
-        />
+        {projectDescriptions.map((project) => {
+          return (
+            <img
+              key={project.value}
+              src={`${project.imageSrc}`}
+              className="w-full h-full object-fill"
+              alt={project.value}
+            />
+          );
+        })}
       </Carousel>
       <div className="self-start mb-5 text-lg md:text-xl row-span-1">
         {showSlideDescription(currentSlide)}
