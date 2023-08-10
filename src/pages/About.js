@@ -1,11 +1,7 @@
-import { FaChess } from "react-icons/fa";
-import { BiFootball } from "react-icons/bi";
-import { GrGamepad } from "react-icons/gr";
-import { BsCodeSquare } from "react-icons/bs";
 import { useState } from "react";
 import { HobbyDescription, Box } from "../components";
 import { MyPhoto } from "../assets/images";
-import { PiDiamondsFourBold } from "react-icons/pi";
+import { hobbyDescriptions } from "../data/descriptions";
 
 function About() {
   const [selectedHobby, setSelectedHobby] = useState("Chess");
@@ -22,19 +18,16 @@ function About() {
   };
 
   return (
-    <div
-      id="about"
-      className="grid content-center gap-5 text-center w-full h-project-screen"
-    >
+    <div id="about" className="grid w-full h-project-screen text-center">
       <div className="grid justify-items-center">
         <div>
-          <p className="text-xl md:text-2xl">Hi, my name is Jacob</p>
+          <p className="text-xl md:text-3xl mt-5">Hi! I'm Jacob</p>
         </div>
         <div>
           <img
             src={MyPhoto}
             alt="Jakub Hajduk"
-            className="w-24 sm:w-32 md:w-36 border rounded-full mt-8 mb-8"
+            className="w-24 sm:w-32 md:w-48 rounded-md border-2 border-cornsilk shadow-md"
           />
         </div>
         <div>
@@ -43,44 +36,26 @@ function About() {
           </p>
         </div>
       </div>
-      <PiDiamondsFourBold className="justify-self-center place-self-center" />
-      <div className="grid justify-self-center justify-items-center place-items-center">
-        <p className="text-xl md:text-2xl mb-4">My hobbies</p>
+      <div className="grid justify-items-center place-content-center">
+        <p className="text-xl md:text-3xl mb-5">My hobbies</p>
         <div className="grid gap-2">
-          <div className="grid grid-cols-4 gap-2 justify-items-center">
-            <Box
-              value="Chess"
-              icon={FaChess}
-              isActive={checkIsActive("Chess")}
-              onClick={() => selectHobby("Chess")}
-              boxType="Hobby"
-            />
-            <Box
-              value="Football"
-              icon={BiFootball}
-              isActive={checkIsActive("Football")}
-              onClick={() => selectHobby("Football")}
-              boxType="Hobby"
-            />
-            <Box
-              value="Gaming"
-              icon={GrGamepad}
-              isActive={checkIsActive("Gaming")}
-              onClick={() => selectHobby("Gaming")}
-              boxType="Hobby"
-            />
-            <Box
-              value="Coding"
-              icon={BsCodeSquare}
-              isActive={checkIsActive("Coding")}
-              onClick={() => selectHobby("Coding")}
-              boxType="Hobby"
-            />
+          <div className="grid grid-cols-4 gap-2">
+            {hobbyDescriptions.map((hobby) => {
+              return (
+                <Box
+                  key={hobby.value}
+                  value={hobby.value}
+                  icon={hobby.icon}
+                  isActive={checkIsActive(hobby.value)}
+                  onClick={() => selectHobby(hobby.value)}
+                  boxType="Hobby"
+                />
+              );
+            })}
           </div>
           <HobbyDescription selectedHobby={selectedHobby} />
         </div>
       </div>
-      <PiDiamondsFourBold className="justify-self-center place-self-center" />
     </div>
   );
 }

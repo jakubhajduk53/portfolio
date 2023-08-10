@@ -2,6 +2,10 @@ import * as Images from "../../assets/images";
 import { BsCardHeading } from "react-icons/bs";
 import { FaReact } from "react-icons/fa";
 import { AiOutlineProject, AiOutlinePhone } from "react-icons/ai";
+import { FaChess } from "react-icons/fa";
+import { BiFootball } from "react-icons/bi";
+import { GrGamepad } from "react-icons/gr";
+import { BsCodeSquare } from "react-icons/bs";
 
 export const projectDescriptions = [
   {
@@ -62,5 +66,24 @@ export const headerDescriptions = [
     href: "#contact",
     value: "Contact",
     icon: AiOutlinePhone,
+  },
+];
+
+export const hobbyDescriptions = [
+  {
+    value: "Chess",
+    icon: FaChess,
+  },
+  {
+    value: "Football",
+    icon: BiFootball,
+  },
+  {
+    value: "Gaming",
+    icon: GrGamepad,
+  },
+  {
+    value: "Coding",
+    icon: BsCodeSquare,
   },
 ];
