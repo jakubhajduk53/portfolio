@@ -1,6 +1,6 @@
 import { Carousel } from "flowbite-react";
 import { useState } from "react";
-import * as Images from "../assets/index.js";
+import * as Images from "../assets/images/index.js";
 
 function Projects() {
   const [currentSlide, setCurrentSlide] = useState(null);
