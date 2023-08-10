@@ -44,7 +44,7 @@ export const projectDescriptions = [
 
 export const headerDescriptions = [
   {
-    href: "#about",
+    href: "#",
     value: "About",
     icon: BsCardHeading,
   },

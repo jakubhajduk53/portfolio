@@ -18,13 +18,13 @@ function About() {
   };
 
   const checkIsActive = (hobby) => {
-    return hobby === selectedHobby ? true : false;
+    return hobby === selectedHobby;
   };
 
   return (
     <div
       id="about"
-      className="grid content-center gap-5 text-center w-full h-screen max-h-screen"
+      className="grid content-center gap-5 text-center w-full h-project-screen"
     >
       <div className="grid justify-items-center">
         <div>
