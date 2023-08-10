@@ -17,6 +17,7 @@ module.exports = {
       sienna: "#78290F",
       "rich-black": "#001524",
       "carribean-current": "#15616D",
+      ivory: "#FDFBED",
     },
     extend: {
       height: {
