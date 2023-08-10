@@ -1,11 +1,11 @@
-import { PiDiamondsFourBold } from "react-icons/pi";
 import { FaChess } from "react-icons/fa";
 import { BiFootball } from "react-icons/bi";
 import { GrGamepad } from "react-icons/gr";
 import { BsCodeSquare } from "react-icons/bs";
-import HobbyDescription from "../components/HobbyDescription";
 import { useState } from "react";
-import Box from "../components/Box";
+import { HobbyDescription, Box } from "../components";
+import { MyPhoto } from "../assets/images";
+import { PiDiamondsFourBold } from "react-icons/pi";
 
 function About() {
   const [selectedHobby, setSelectedHobby] = useState("Chess");
@@ -32,8 +32,8 @@ function About() {
         </div>
         <div>
           <img
-            src={require("../assets/photo.jpg")}
-            alt="My photo"
+            src={MyPhoto}
+            alt="Jakub Hajduk"
             className="w-24 sm:w-32 md:w-36 border rounded-full mt-8 mb-8"
           />
         </div>
