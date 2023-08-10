@@ -18,7 +18,11 @@ module.exports = {
       "rich-black": "#001524",
       "carribean-current": "#15616D",
     },
-    extend: {},
+    extend: {
+      height: {
+        "project-screen": "calc(100vh - 4rem)",
+      },
+    },
   },
   plugins: [require("flowbite/plugin")],
 };
