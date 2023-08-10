@@ -9,12 +9,16 @@ function Box({
   date,
   boxType,
 }) {
+  const hobbyClasses = classNames(
+    "hover:bg-slate-200 w-16 h-16 sm:w-24 sm:h-24 md:w-36 md:h-36 sm:text-lg cursor-pointer hover:bg-cornsilk transition-colors"
+  );
+  const technologyClasses = classNames(
+    "bg-yellow-100/20 hover:bg-yellow-100 w-20 h-32 sm:w-24 sm:h-32 md:w-36 md:h-36 sm:text-base"
+  );
   const boxClasses = classNames(
     "grid justify-items-center place-items-center border rounded-xl text-sm md:text-xl",
-    boxType === "Hobby"
-      ? "hover:bg-slate-200 w-16 h-16 sm:w-24 sm:h-24 md:w-36 md:h-36 sm:text-lg"
-      : "bg-yellow-100/20 hover:bg-yellow-100 w-20 h-32 sm:w-24 sm:h-32 md:w-36 md:h-36 sm:text-base",
-    isActive ? "bg-slate-200" : null,
+    boxType === "Hobby" ? hobbyClasses : technologyClasses,
+    isActive ? "bg-cornsilk" : null,
     className
   );
 
