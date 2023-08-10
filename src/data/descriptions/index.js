@@ -1,4 +1,7 @@
 import * as Images from "../../assets/images";
+import { BsCardHeading } from "react-icons/bs";
+import { FaReact } from "react-icons/fa";
+import { AiOutlineProject, AiOutlinePhone } from "react-icons/ai";
 
 export const projectDescriptions = [
   {
@@ -36,5 +39,28 @@ export const projectDescriptions = [
   {
     value: "Meal App - Area Item",
     imageSrc: Images.MealApp5,
+  },
+];
+
+export const headerDescriptions = [
+  {
+    href: "#about",
+    value: "About",
+    icon: BsCardHeading,
+  },
+  {
+    href: "#technologies",
+    value: "Technologies",
+    icon: FaReact,
+  },
+  {
+    href: "#projects",
+    value: "Projects",
+    icon: AiOutlineProject,
+  },
+  {
+    href: "#contact",
+    value: "Contact",
+    icon: AiOutlinePhone,
   },
 ];
