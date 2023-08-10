@@ -1,6 +1,6 @@
 import { Carousel } from "flowbite-react";
 import { useState } from "react";
-import * as Images from "../assets/images/index.js";
+import { projectDescriptions } from "../data/project_descriptions";
 
 function Projects() {
   const [currentSlide, setCurrentSlide] = useState(null);
@@ -19,45 +19,6 @@ function Projects() {
       },
     },
   };
-
-  const projectDescriptions = [
-    {
-      value: "Cars App - Home",
-      imageSrc: Images.CarsApp1,
-    },
-    {
-      value: "Cars App - Cars For Sale",
-      imageSrc: Images.CarsApp2,
-    },
-    {
-      value: "Cars App - Sell Your Car",
-      imageSrc: Images.CarsApp3,
-    },
-    {
-      value: "Cars App - Menu",
-      imageSrc: Images.CarsApp4,
-    },
-    {
-      value: "Meal App - Main Page",
-      imageSrc: Images.MealApp1,
-    },
-    {
-      value: "Meal App - Categories",
-      imageSrc: Images.MealApp2,
-    },
-    {
-      value: "Meal App - Category Item",
-      imageSrc: Images.MealApp3,
-    },
-    {
-      value: "Meal App - Areas",
-      imageSrc: Images.MealApp4,
-    },
-    {
-      value: "Meal App - Area Item",
-      imageSrc: Images.MealApp5,
-    },
-  ];
 
   const showSlideDescription = (slideId) => {
     return projectDescriptions[slideId]?.value;
