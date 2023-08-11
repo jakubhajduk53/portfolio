@@ -18,6 +18,9 @@ module.exports = {
       "rich-black": "#001524",
       "carribean-current": "#15616D",
       ivory: "#FDFBED",
+      "arylide-yellow": "#EFDB6C",
+      citrine: "#E9CE35",
+      vanilla: "#F7EDB6",
     },
     extend: {
       height: {
