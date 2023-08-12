@@ -4,42 +4,42 @@ import { MyPhoto } from "../assets/images";
 import { hobbyDescriptions } from "../data/descriptions";
 
 function About() {
-  const [selectedHobby, setSelectedHobby] = useState("Chess");
+  const [selectedHobby, setSelectedHobby] = useState(hobbyDescriptions[0]);
 
   const currentYear = new Date().getFullYear();
   const myAge = currentYear - 2003;
 
-  const selectHobby = (hobby) => {
-    setSelectedHobby(hobby);
+  const selectHobby = (value, description) => {
+    setSelectedHobby({ value, description });
   };
 
-  const checkIsActive = (hobby) => {
-    return hobby === selectedHobby;
+  const checkIsActive = (hobbyValue) => {
+    return hobbyValue === selectedHobby.value;
   };
 
   return (
     <div id="about" className="grid w-full h-project-screen text-center">
       <div className="grid justify-items-center">
         <div>
-          <p className="text-xl md:text-3xl mt-5">Hi! I'm Jacob</p>
+          <p className="text-xl md:text-3xl mt-5 select-none">Hi! I'm Jacob</p>
         </div>
         <div>
           <img
             src={MyPhoto}
             alt="Jakub Hajduk"
-            className="w-24 sm:w-32 md:w-48 rounded-md border-2 border-cornsilk shadow-md"
+            className="w-24 sm:w-32 md:w-48 rounded-md border-2 border-cornsilk shadow-md select-none"
           />
         </div>
         <div>
-          <p className="text-xl md:text-2xl">
+          <p className="text-xl md:text-2xl select-none">
             I am {myAge} years old Frontend Developer
           </p>
         </div>
       </div>
       <div className="grid justify-items-center place-content-center">
-        <p className="text-xl md:text-3xl mb-5">My hobbies</p>
-        <div className="grid gap-2">
-          <div className="grid grid-cols-4 gap-2">
+        <p className="text-xl md:text-3xl mb-5 select-none">My hobbies</p>
+        <div className="grid gap-2 w-[50rem]">
+          <div className="grid grid-cols-5 gap-2 place-items-center">
             {hobbyDescriptions.map((hobby) => {
               return (
                 <Box
@@ -47,13 +47,13 @@ function About() {
                   value={hobby.value}
                   icon={hobby.icon}
                   isActive={checkIsActive(hobby.value)}
-                  onClick={() => selectHobby(hobby.value)}
+                  onClick={() => selectHobby(hobby.value, hobby.description)}
                   boxType="Hobby"
                 />
               );
             })}
           </div>
-          <HobbyDescription selectedHobby={selectedHobby} />
+          <HobbyDescription description={selectedHobby.description} />
         </div>
       </div>
     </div>
