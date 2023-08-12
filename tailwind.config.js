@@ -21,6 +21,9 @@ module.exports = {
       "arylide-yellow": "#EFDB6C",
       citrine: "#E9CE35",
       vanilla: "#F7EDB6",
+      "light-colombia-blue": "#CDE7F4",
+      "dark-colombia-blue": "#BCDFF0",
+      "uranian-blue": "#ACD7EC",
     },
     extend: {
       height: {
