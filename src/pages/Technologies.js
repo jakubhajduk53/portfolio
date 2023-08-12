@@ -5,15 +5,15 @@ function Technologies() {
   return (
     <div
       id="technologies"
-      className="grid content-center w-full h-screen bg-yellow-50 overflow-y-scroll md:overflow-auto"
+      className="grid content-center w-full h-screen bg-light-colombia-blue overflow-y-scroll md:overflow-auto"
     >
       <div className="grid pt-10 gap-5 text-center justify-items-center place-items-center">
         <div>
-          <p className="text-xl md:text-2xl mb-5">
+          <p className="text-xl md:text-3xl mb-5">
             Technologies I have learned
           </p>
         </div>
-        <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-6 gap-5 ">
+        <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-7 gap-5 ">
           {LearnedTechnologies.map((technology) => {
             return (
               <Box
