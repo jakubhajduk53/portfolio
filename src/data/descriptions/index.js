@@ -1,4 +1,3 @@
-import * as Images from "../../assets/images";
 import { BsCardHeading } from "react-icons/bs";
 import { FaReact } from "react-icons/fa";
 import { AiOutlineProject, AiOutlinePhone } from "react-icons/ai";
@@ -6,45 +5,7 @@ import { FaChess } from "react-icons/fa";
 import { BiFootball, BiBookBookmark } from "react-icons/bi";
 import { GrGamepad } from "react-icons/gr";
 import { BsCodeSquare } from "react-icons/bs";
-
-export const projectDescriptions = [
-  {
-    value: "Cars App - Home",
-    imageSrc: Images.CarsApp1,
-  },
-  {
-    value: "Cars App - Cars For Sale",
-    imageSrc: Images.CarsApp2,
-  },
-  {
-    value: "Cars App - Sell Your Car",
-    imageSrc: Images.CarsApp3,
-  },
-  {
-    value: "Cars App - Menu",
-    imageSrc: Images.CarsApp4,
-  },
-  {
-    value: "Meal App - Main Page",
-    imageSrc: Images.MealApp1,
-  },
-  {
-    value: "Meal App - Categories",
-    imageSrc: Images.MealApp2,
-  },
-  {
-    value: "Meal App - Category Item",
-    imageSrc: Images.MealApp3,
-  },
-  {
-    value: "Meal App - Areas",
-    imageSrc: Images.MealApp4,
-  },
-  {
-    value: "Meal App - Area Item",
-    imageSrc: Images.MealApp5,
-  },
-];
+import * as Images from "../../assets/images";
 
 export const headerDescriptions = [
   {
@@ -99,5 +60,29 @@ export const hobbyDescriptions = [
     icon: BiBookBookmark,
     description:
       "I read books everyday since several years. My favourite author is Stephen King. I am reading various types of books, from horrors to travel books.",
+  },
+];
+
+export const projectsDescriptions = [
+  {
+    value: "Cars App",
+    description: "The project is designed to set up an online car shop.",
+    site: "https://cars-app-jakubhajduk53.vercel.app/",
+    repository: "https://github.com/jakubhajduk53/cars-app",
+    image: Images.CarsApp,
+  },
+  {
+    value: "Meal App",
+    description: "The project is designed to display meal descriptions",
+    site: "https://meal-app-jakubhajduk53.vercel.app/",
+    repository: "https://github.com/jakubhajduk53/meal-app",
+    image: Images.MealApp,
+  },
+  {
+    value: "Portfolio",
+    description: "This project is my portfolio page.",
+    site: "https://portfolio-jakubhajduk53.vercel.app/",
+    repository: "https://github.com/jakubhajduk53/portfolio",
+    image: Images.MyPhoto,
   },
 ];
