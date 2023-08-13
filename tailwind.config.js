@@ -24,6 +24,9 @@ module.exports = {
       "light-colombia-blue": "#CDE7F4",
       "dark-colombia-blue": "#BCDFF0",
       "uranian-blue": "#ACD7EC",
+      "tea-green": "#D8ECC1",
+      pistachio: "#BADD92",
+      "yellow-green": "#93C954",
     },
     extend: {
       height: {
