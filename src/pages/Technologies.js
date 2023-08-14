@@ -13,7 +13,7 @@ function Technologies() {
             Technologies I have learned
           </p>
         </div>
-        <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-7 gap-5 ">
+        <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-7 gap-5">
           {LearnedTechnologies.map((technology) => {
             return (
               <Box

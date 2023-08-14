@@ -9,6 +9,7 @@ module.exports = {
       cornsilk: "#FAF4D3",
       ivory: "#FDFBED",
       vanilla: "#F7EDB6",
+      "carrot-orange": "#F58F00",
     },
     extend: {
       height: {
