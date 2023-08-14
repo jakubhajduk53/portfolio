@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { projectsDescriptions } from "../data/descriptions";
 import { Project } from "../components";
 
@@ -6,7 +5,7 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="grid justify-center place-items-center w-full h-screen bg-tea-green"
+      className="grid justify-center place-items-center w-full h-screen"
     >
       <div className="self-end mb-5 text-xl md:text-3xl row-span-1">
         My projects

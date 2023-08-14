@@ -6,7 +6,7 @@ import Contact from "./Contact";
 
 function MainPage() {
   return (
-    <div>
+    <div className="bg-ivory">
       <Header />
       <About />
       <Technologies />

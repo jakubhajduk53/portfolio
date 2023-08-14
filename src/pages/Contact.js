@@ -4,16 +4,19 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="grid content-center justify-items-center w-full h-screen bg-blue-100"
+      className="grid content-center justify-items-center w-full h-screen "
     >
       <div className="grid justify-items-center">
-        <div className="text-2xl">Contact</div>
-        <div className="flex items-center">
+        <div className="text-xl md:text-3xl select-none">Contact</div>
+        <div className="flex items-center text-lg md:text-xl select-none">
           <AiOutlinePhone /> 509 778 233
         </div>
-        <div className="flex items-center">
+        <a
+          href="mailto:jakubhajduk53@gmail.com"
+          className="flex items-center text-lg md:text-xl hover:text-blue-700"
+        >
           <AiOutlineMail /> jakubhajduk53@gmail.com
-        </div>
+        </a>
       </div>
     </div>
   );
