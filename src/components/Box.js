@@ -11,15 +11,14 @@ function Box({
 }) {
   const hobbyClasses = classNames(
     "w-16 h-16 sm:w-24 sm:h-24 md:w-36 md:h-36 sm:text-lg",
-    "border-vanilla hover:bg-vanilla transition-colors cursor-pointer"
+    "transition-colors cursor-pointer"
   );
   const technologyClasses = classNames(
-    "w-20 h-32 sm:w-24 sm:h-32 md:w-36 md:h-36 xl:w-48 xl:h-48 sm:text-base",
-    "bg-dark-colombia-blue hover:bg-uranian-blue border-uranian-blue"
+    "w-20 h-32 sm:w-24 sm:h-32 md:w-36 md:h-36 xl:w-48 xl:h-48 sm:text-base"
   );
   const boxClasses = classNames(
-    "grid justify-items-center place-items-center border rounded-xl shadow-md",
-    "text-sm md:text-xl",
+    "grid justify-items-center place-items-center rounded-xl shadow-md",
+    "text-sm md:text-xl hover:bg-vanilla",
     boxType === "Hobby" ? hobbyClasses : technologyClasses,
     isActive ? "bg-vanilla" : "bg-cornsilk",
     className
