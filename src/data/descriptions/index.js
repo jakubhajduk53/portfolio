@@ -83,6 +83,6 @@ export const projectsDescriptions = [
     description: "This project is my portfolio page.",
     site: "https://portfolio-jakubhajduk53.vercel.app/",
     repository: "https://github.com/jakubhajduk53/portfolio",
-    image: Images.MyPhoto,
+    image: Images.Portfolio,
   },
 ];
