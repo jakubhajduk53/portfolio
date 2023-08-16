@@ -6,13 +6,13 @@ import Contact from "./Contact";
 
 function MainPage() {
   return (
-    <div className="bg-ivory">
+    <>
       <Header />
       <About />
       <Technologies />
       <Projects />
       <Contact />
-    </div>
+    </>
   );
 }
 
