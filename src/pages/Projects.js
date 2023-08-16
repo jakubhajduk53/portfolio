@@ -1,4 +1,4 @@
-import { projectsDescriptions } from "../data/descriptions";
+import { projectsData } from "../data";
 import { Project } from "../components";
 
 function Projects() {
@@ -11,7 +11,7 @@ function Projects() {
         My projects
       </div>
       <div className="grid grid-cols-3 gap-10 self-start">
-        {projectsDescriptions.map((project) => {
+        {projectsData.map((project) => {
           return (
             <Project
               key={project.value}

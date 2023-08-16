@@ -7,8 +7,8 @@ function Contact() {
       className="grid content-center justify-items-center w-full h-screen "
     >
       <div className="grid justify-items-center">
-        <div className="text-xl md:text-3xl select-none">Contact</div>
-        <div className="flex items-center text-lg md:text-xl select-none">
+        <div className="text-xl md:text-3xl">Contact</div>
+        <div className="flex items-center text-lg md:text-xl">
           <AiOutlinePhone /> 509 778 233
         </div>
         <a

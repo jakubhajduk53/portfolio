@@ -30,7 +30,7 @@ function Box({
       onClick={onClick}
       tabIndex={boxType === "Hobby" ? 0 : null}
     >
-      <div className="grid justify-items-center gap-2 select-none">
+      <div className="grid justify-items-center gap-2">
         {Icon && <Icon className="shrink-0 text-3xl md:text-5xl" />}
         {value}
         {boxType === "Technology" ? (
