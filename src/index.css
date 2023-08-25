@@ -11,6 +11,6 @@ html {
 
 @media only screen and (max-width: 600px) {
   html {
-    scroll-padding: 8rem;
+    scroll-padding: 4rem;
   }
 }

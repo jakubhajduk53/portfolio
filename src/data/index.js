@@ -202,4 +202,11 @@ export const projectsData = [
     repository: "https://github.com/jakubhajduk53/portfolio",
     image: Images.Portfolio,
   },
+  {
+    value: "Exchange Rate App",
+    description: "This project is designed for pairing currencies",
+    site: "https://exchange-rate-app-jakubhajduk53.vercel.app/",
+    repository: "https://github.com/jakubhajduk53/exchange-rate-app",
+    image: Images.ExchangeRateApp,
+  },
 ];

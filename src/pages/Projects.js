@@ -10,7 +10,7 @@ function Projects() {
       <div className="self-end mb-5 text-xl md:text-3xl row-span-1">
         My projects
       </div>
-      <div className="grid grid-cols-3 gap-10 self-start">
+      <div className="grid grid-cols-2 xl:grid-cols-4 gap-10 self-start overflow-y-scroll md:overflow-auto">
         {projectsData.map((project) => {
           return (
             <Project

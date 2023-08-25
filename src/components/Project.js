@@ -1,10 +1,10 @@
 function Project({ value, image, description, site, repository }) {
   return (
-    <div className="grid justify-items-center md:w-[20rem] md:h-[40rem] bg-cornsilk hover:bg-vanilla rounded-xl shadow-md">
+    <div className="grid justify-items-center xl:w-[20rem] xl:h-[40rem] bg-cornsilk hover:bg-vanilla rounded-xl shadow-md">
       <img
         src={image}
         alt={value}
-        className=" w-[5rem] h-[5rem] md:w-[15rem] md:h-[15rem] rounded-xl shadow-md mt-2  transition-colors"
+        className=" w-[5rem] h-[5rem] xl:w-[15rem] xl:h-[15rem] rounded-xl shadow-md mt-2  transition-colors"
       />
       <div className="text-xl md:text-3xl text-center">{value}</div>
       <div className="flex flex-col text-center text-blue-700 text-sm md:text-lg">
