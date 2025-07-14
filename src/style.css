@@ -1,1 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import "tailwindcss";
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --font-playfair-display: "Playfair Display";
+  --color-main-100: hsl(210, 17%, 98%);
+  --color-main-200: hsl(210, 16%, 93%);
+  --color-main-300: hsl(210, 14%, 89%);
+  --color-main-400: hsl(210, 14%, 83%);
+  --color-main-500: hsl(210, 11%, 71%);
+  --color-main-600: hsl(210, 7%, 46%);
+  --color-main-700: hsl(210, 9%, 31%);
+  --color-main-800: hsl(210, 10%, 23%);
+  --color-main-900: hsl(210, 11%, 15%);
+}
