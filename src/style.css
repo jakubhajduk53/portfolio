@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap");
 @import "tailwindcss";
 html,
 body,
@@ -12,6 +13,7 @@ body,
 
 @theme {
   --font-playfair-display: "Playfair Display";
+  --font-tiktok-sans: "TikTok Sans";
   --color-main-100: hsl(210, 17%, 98%);
   --color-main-200: hsl(210, 16%, 93%);
   --color-main-300: hsl(210, 14%, 89%);

@@ -38,43 +38,48 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="font-playfair-display text-main-900">
+  <div class="font-tiktok-sans text-main-900 bg-main-100">
     <div
-      class="flex items-center justify-around h-[50px] bg-gradient-to-b from-main-100 to-main-200 shadow-[0px_1px_5px_hsla(210,11%,15%,0.5)] w-full fixed top-0 left-0 z-50"
+      class="flex flex-wrap items-center justify-around text-center px-[50px] h-[80px] bg-main-100 w-full fixed top-0 left-0 z-50"
     >
-      <p class="font-semibold text-lg">JAKUB HAJDUK</p>
+      <p class="font-playfair-display font-semibold text-base md:text-xl">
+        JAKUB HAJDUK
+      </p>
       <a
         v-for="item in navItems"
         :key="item.id"
         :href="item.href"
         :class="{
-          'font-semibold': activeAnchor === item.href.substring(1),
-          'text-main-800': activeAnchor !== item.href.substring(1),
+          'text-sm md:text-base font-semibold':
+            activeAnchor === item.href.substring(1),
+          'text-sm md:text-base text-main-800':
+            activeAnchor !== item.href.substring(1),
         }"
         >{{ item.label }}</a
       >
     </div>
     <div>
-      <div
-        id="about"
-        class="bg-radial from-main-400 to-main-500 h-screen pt-[50px]"
-      ></div>
-      <div
-        id="quiz"
-        class="bg-radial from-main-500 to-main-600 h-screen pt-[50px]"
-      ></div>
-      <div
-        id="ui"
-        class="bg-radial from-main-400 to-main-500 h-screen pt-[50px]"
-      ></div>
+      <div id="about" class="h-screen pt-[130px] pb-[50px] pl-[50px] pr-[50px]">
+        <div class="h-full bg-radial from-main-100 to-main-200"></div>
+      </div>
+      <div id="quiz" class="h-screen pt-[130px] pb-[50px] pl-[50px] pr-[50px]">
+        <div class="h-full bg-radial from-main-200 to-main-300"></div>
+      </div>
+      <div id="ui" class="h-screen pt-[130px] pb-[50px] pl-[50px] pr-[50px]">
+        <div class="h-full bg-radial from-main-100 to-main-200"></div>
+      </div>
       <div
         id="weather"
-        class="bg-radial from-main-500 to-main-600 h-screen pt-[50px]"
-      ></div>
+        class="h-screen pt-[130px] pb-[50px] pl-[50px] pr-[50px]"
+      >
+        <div class="h-full bg-radial from-main-200 to-main-300"></div>
+      </div>
       <div
         id="contact"
-        class="bg-radial from-main-400 to-main-500 h-screen pt-[50px]"
-      ></div>
+        class="h-screen pt-[130px] pb-[50px] pl-[50px] pr-[50px]"
+      >
+        <div class="h-full bg-radial from-main-100 to-main-200"></div>
+      </div>
     </div>
   </div>
 </template>
