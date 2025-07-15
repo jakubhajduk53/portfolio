@@ -60,7 +60,23 @@ onUnmounted(() => {
     </div>
     <div>
       <div id="about" class="h-screen pt-[130px] pb-[50px] pl-[50px] pr-[50px]">
-        <div class="h-full bg-radial from-main-100 to-main-200"></div>
+        <div
+          class="flex flex-col gap-3 md:gap-5 items-center justify-center h-full bg-radial from-main-100 to-main-200"
+        >
+          <div>
+            <p class="text-xl md:text-3xl font-bold">
+              Building responsive websites with Vue.js
+            </p>
+            <p class="text-base md:text-xl font-bold text-main-800">
+              a Software Engineer specialized in Front-End development
+            </p>
+          </div>
+          <div>
+            <p class="text-base md:text-xl text-main-800">
+              Dive into my work & explore the tools that bring my code to life
+            </p>
+          </div>
+        </div>
       </div>
       <div id="quiz" class="h-screen pt-[130px] pb-[50px] pl-[50px] pr-[50px]">
         <div class="h-full bg-radial from-main-200 to-main-300"></div>
