@@ -1,45 +1,53 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
+import ProjectComponent from "../src/components/ProjectComponent.vue";
+
 const activeAnchor = ref("about");
 const navItems = [
   { id: 1, href: "#about", label: "About" },
-  { id: 2, href: "#quiz", label: "Project 1: Quiz" },
-  { id: 3, href: "#ui", label: "Project 2: MyUI" },
-  { id: 4, href: "#weather", label: "Project 3: WeatherApp" },
-  { id: 5, href: "#contact", label: "Contact" },
+  { id: 2, href: "#projects", label: "Projects" },
+  { id: 3, href: "#contact", label: "Contact" },
 ];
 
-const quizFeatures = [
-  "Modern Tech Stack: Developed using Vue 3 with the Composition API, TypeScript for type safety, and state management handled by Pinia.",
-  "Smooth Navigation: Vue Router ensures seamless transitions between quiz pages.",
-  "Responsive UI: Styled with TailwindCSS and Element Plus for a clean and user-friendly design.",
-  "Instant Feedback: After completing the quiz, users receive their results, displaying both their selected answers and the correct ones.",
-  "Color-Coded Results: Answers are highlighted with appropriate colors—green for correct responses and red for incorrect ones—making it easy to review mistakes.",
-];
-
-const quizDescription =
-  "This is a simple quiz application built with Vue 3, TypeScript, Pinia, Vue Router, Element Plus, and TailwindCSS. The app consists of 10 multiple-choice questions, each with only one correct answer, selected using radio buttons.";
-
-const weatherFeatures = [
-  "Modern Tech Stack: Built with Vue 3 and TypeScript for a robust and scalable application.",
-  "State Management: Pinia ensures smooth handling of user input and API responses.",
-  "User-Friendly UI: Styled with TailwindCSS and Element Plus for a clean and intuitive experience.",
-  "Comprehensive Weather Data: Displays essential details like temperature, humidity, and wind speed, along with advanced metrics like latitude and longitude.",
-  "Live Search: Users can enter any location to instantly fetch the latest weather conditions.",
-];
-
-const weatherDescription =
-  "A weather application built with Vue 3, TypeScript, Pinia, Element Plus, and TailwindCSS. Users can search for any location to retrieve real-time weather data from the OpenWeatherMap API.";
-
-const uiFeatures = [
-  "Custom Design System: Built with Vue 3 and TypeScript, offering a reusable and scalable UI component library.",
-  "Dual Color Palettes: Includes separate light and dark HSL-based palettes for consistent theming across UI components.",
-  "Button Components: Support multiple sizes, border styles, and one of seven predefined themes for visual variety.",
-  "Utility-First Styling: TailwindCSS ensures rapid development with consistent spacing, typography, and responsive behavior.",
-  "Consistent UX Patterns: Components follow predictable structure and interactions to provide a smooth user experience.",
-];
-const uiDescription =
-  "A custom UI component library built with Vue 3, TypeScript, and TailwindCSS. Features a flexible HSL-based color system and a suite of interactive, accessible button components ready for integration in modern web apps.";
+const quizData = {
+  name: "Trivia Quiz",
+  shortDescription: "Answer 10 various trivia questions",
+  description:
+    "This is a simple quiz application built with Vue 3, TypeScript, Pinia, Vue Router, Element Plus, and TailwindCSS. The app consists of 10 multiple-choice questions, each with only one correct answer, selected using radio buttons.",
+  techStack: [
+    "Vue.js",
+    "TypeScript",
+    "Pinia",
+    "Vue Router",
+    "Element Plus",
+    "TailwindCSS",
+  ],
+  ariaLabel: "Trivia Quiz Site",
+};
+const weatherData = {
+  name: "Weather Forecast",
+  shortDescription: "Check the weather at any location",
+  description:
+    "A weather application built with Vue 3, TypeScript, Pinia, Element Plus, and TailwindCSS. Users can search for any location to retrieve real-time weather data from the OpenWeatherMap API.",
+  techStack: ["Vue.js", "TypeScript", "Pinia", "Element Plus", "TailwindCSS"],
+  ariaLabel: "Weather Forecast Site",
+};
+const uiData = {
+  name: "UI Library",
+  shortDescription: "Build interfaces faster with custom-styled UI components",
+  description:
+    "A custom UI component library built with Vue 3, TypeScript, and TailwindCSS. Features a flexible HSL-based color system and a suite of interactive, accessible button components ready for integration in modern web apps.",
+  techStack: ["Vue.js", "TypeScript", "TailwindCSS"],
+  ariaLabel: "UI Library Site",
+};
+const monocolorData = {
+  name: "Monocolor Landing Page",
+  shortDescription: "Discover modern HSL palette usage",
+  description:
+    "A minimal landing page built using just one hue. Change it manually (0–360) or enable animated color rotation.",
+  techStack: ["Vue.js", "TypeScript", "TailwindCSS"],
+  ariaLabel: "Monocolor Landing Page Site",
+};
 
 let observer: IntersectionObserver;
 
@@ -111,38 +119,18 @@ onUnmounted(() => {
           </div>
         </div>
       </div>
-      <div id="quiz" class="h-screen pt-[130px] pb-[50px] pl-[50px] pr-[50px]">
-        <div
-          class="flex items-center justify-center h-full bg-radial from-main-200 to-main-300"
-        >
-          <div
-            class="flex flex-col gap-3 md:gap-5 p-3 md:p-5 items-center justify-center bg-main-400"
-          >
-            <p class="text-xl md:text-3xl font-bold">Quiz App</p>
-            <p class="text-center text-base md:text-xl font-bold text-main-800">
-              Answer 10 various trivia questions
-            </p>
-            <p class="max-w-[60%] text-base text-main-800">
-              {{ quizDescription }}
-            </p>
-            <a
-              href=""
-              target="_blank"
-              aria-label="Quiz App site"
-              class="bg-main-800 hover:bg-main-900 text-main-300 hover:text-main-200 duration-100 p-1 md:p-3 rounded-full"
-              >Visit website</a
-            >
-          </div>
-        </div>
-      </div>
-      <div id="ui" class="h-screen pt-[130px] pb-[50px] pl-[50px] pr-[50px]">
-        <div class="h-full bg-radial from-main-100 to-main-200"></div>
-      </div>
       <div
-        id="weather"
+        id="projects"
         class="h-screen pt-[130px] pb-[50px] pl-[50px] pr-[50px]"
       >
-        <div class="h-full bg-radial from-main-200 to-main-300"></div>
+        <div
+          class="grid grid-cols-2 grid-rows-2 gap-3 p-3 h-full bg-radial from-main-200 to-main-300"
+        >
+          <ProjectComponent :data="quizData" />
+          <ProjectComponent :data="weatherData" />
+          <ProjectComponent :data="uiData" />
+          <ProjectComponent :data="monocolorData" />
+        </div>
       </div>
       <div
         id="contact"
