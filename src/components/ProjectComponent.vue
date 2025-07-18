@@ -12,28 +12,37 @@ const { data } = defineProps<{ data: Project }>();
 
 const { name, shortDescription, description, techStack, ariaLabel, icon } =
   data ?? {};
+
+const techColors: Record<string, string> = {
+  "Vue.js": "bg-vue-dark text-vue-light",
+  TypeScript: "bg-typescript-dark text-typescript-light",
+  Pinia: "bg-pinia-dark text-pinia-light",
+  "Vue Router": "bg-vuerouter-dark text-vuerouter-light",
+  "Element Plus": "bg-elementplus-dark text-elementplus-light",
+  TailwindCSS: "bg-tailwindcss-dark text-tailwindcss-light",
+};
 </script>
 
 <template>
   <div
-    class="flex flex-col gap-3 md:gap-5 p-3 md:p-5 items-center justify-center bg-main-400 box-border"
+    class="flex flex-col gap-1 md:gap-3 items-center justify-center bg-main-400 box-border overflow-auto"
   >
     <div
-      class="flex justify-center items-center gap-1 text-xl md:text-3xl font-bold"
+      class="flex justify-center items-center gap-1 text-base md:text-xl font-bold"
     >
       <p>{{ name }}</p>
       <i :class="icon" />
     </div>
-    <p class="text-center text-base md:text-xl font-bold text-main-800">
+    <p class="text-center text-sm md:text-base font-bold text-main-800">
       {{ shortDescription }}
     </p>
-    <p class="max-w-[60%] text-base text-main-800">
+    <p class="max-w-[60%] text-sm text-main-800">
       {{ description }}
     </p>
-    <div class="flex gap-3 md:gap-5">
+    <div class="flex gap-3 md:gap-5 m-3 flex-wrap">
       <span
         v-for="technology in techStack"
-        class="text-base text-main-700 bg-main-200 p-1 rounded-full"
+        :class="`${techColors[technology]} text-sm p-1 rounded-md`"
       >
         {{ technology }}
       </span>
@@ -42,9 +51,9 @@ const { name, shortDescription, description, techStack, ariaLabel, icon } =
       href=""
       target="_blank"
       :aria-label="ariaLabel"
-      class="bg-main-800 hover:bg-main-900 text-main-300 hover:text-main-200 duration-100 p-1 md:p-3 rounded-full"
-      >Visit website</a
-    >
+      class="flex items-center justify-center gap-1 text-sm bg-main-800 hover:bg-main-900 text-main-300 hover:text-main-200 duration-100 p-1 md:p-3 rounded-full"
+      >Visit website <i class="bx bx-right-top-arrow-circle text-base"></i
+    ></a>
   </div>
 </template>
 
