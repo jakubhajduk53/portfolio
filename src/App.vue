@@ -106,7 +106,7 @@ onUnmounted(() => {
     <div>
       <div id="about" class="h-screen pt-[130px] pb-[50px] pl-[50px] pr-[50px]">
         <div
-          class="flex flex-col gap-3 md:gap-5 p-3 md:p-5 text-center items-center justify-center h-full bg-radial from-main-100 to-main-200"
+          class="pattern flex flex-col gap-3 md:gap-5 p-3 md:p-5 text-center items-center justify-center h-full bg-radial from-main-100 to-main-200"
         >
           <div>
             <p class="text-xl md:text-3xl font-bold">
@@ -140,7 +140,45 @@ onUnmounted(() => {
         id="contact"
         class="h-screen pt-[130px] pb-[50px] pl-[50px] pr-[50px]"
       >
-        <div class="h-full bg-radial from-main-100 to-main-200"></div>
+        <div
+          class="flex flex-col justify-center items-center text-center h-full bg-radial pattern from-main-100 to-main-200"
+        >
+          <div class="flex items-center justify-center gap-1">
+            <i class="bx bx-envelope" />
+            <a
+              href="mailto:jakubhajduk53@gmail.com"
+              aria-label="Jakub Hajduk's Email"
+              class="underline"
+              >jakubhajduk53@gmail.com</a
+            >
+          </div>
+          <div class="flex items-center justify-center gap-1">
+            <i class="bx bx-phone" />
+            <p>+48 509 778 233</p>
+          </div>
+
+          <div class="flex items-center justify-center gap-1">
+            <i class="bx bxl-github" />
+            <a
+              href="https://github.com/jakubhajduk53"
+              target="_blank"
+              aria-label="Jakub Hajduk's Github Profile"
+              class="underline"
+              >github.com/jakubhajduk53</a
+            >
+          </div>
+
+          <div class="flex items-center justify-center gap-1">
+            <i class="bx bxl-linkedin-square" />
+            <a
+              href="https://www.linkedin.com/in/jakub-hajduk-ab0122286"
+              target="_blank"
+              aria-label="Jakub Hajduk's LinkedIn Profile"
+              class="underline"
+              >linkedin.com/in/jakub-hajduk-ab0122286/</a
+            >
+          </div>
+        </div>
       </div>
     </div>
   </div>
