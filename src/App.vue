@@ -116,11 +116,15 @@ onUnmounted(() => {
               a Software Engineer specialized in Front-End development
             </p>
           </div>
-          <div>
-            <p class="text-base md:text-xl text-main-800">
-              Dive into my work & explore the tools that bring my code to life
-            </p>
-          </div>
+          <p class="text-base md:text-xl text-main-800">
+            Dive into my work & explore the tools that bring my code to life
+          </p>
+          <a
+            href="#projects"
+            aria-label="Relocate to projects section"
+            class="flex justify-center items-center text-base md:text-xl bg-main-800 hover:bg-main-900 text-main-300 hover:text-main-200 duration-100 p-1 md:p-3 rounded-full"
+            ><i class="bx bx-down-arrow-alt"
+          /></a>
         </div>
       </div>
       <div

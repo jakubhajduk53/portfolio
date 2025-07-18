@@ -27,4 +27,16 @@ body,
   --color-main-700: hsl(210, 9%, 31%);
   --color-main-800: hsl(210, 10%, 23%);
   --color-main-900: hsl(210, 11%, 15%);
+  --color-vue-dark: hsl(140, 70%, 40%);
+  --color-vue-light: hsl(140, 70%, 90%);
+  --color-typescript-dark: hsl(210, 70%, 40%);
+  --color-typescript-light: hsl(210, 70%, 90%);
+  --color-pinia-dark: hsl(60, 70%, 40%);
+  --color-pinia-light: hsl(60, 70%, 90%);
+  --color-vuerouter-dark: hsl(270, 70%, 40%);
+  --color-vuerouter-light: hsl(270, 70%, 90%);
+  --color-elementplus-dark: hsl(90, 70%, 40%);
+  --color-elementplus-light: hsl(90, 70%, 90%);
+  --color-tailwindcss-dark: hsl(190, 70%, 40%);
+  --color-tailwindcss-light: hsl(190, 70%, 90%);
 }
