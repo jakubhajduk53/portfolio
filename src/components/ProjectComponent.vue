@@ -5,11 +5,12 @@ interface Project {
   description?: string;
   techStack?: string[];
   ariaLabel?: string;
+  icon?: string;
 }
 
 const { data } = defineProps<{ data: Project }>();
 
-const { name, shortDescription, description, techStack, ariaLabel } =
+const { name, shortDescription, description, techStack, ariaLabel, icon } =
   data ?? {};
 </script>
 
@@ -17,7 +18,12 @@ const { name, shortDescription, description, techStack, ariaLabel } =
   <div
     class="flex flex-col gap-3 md:gap-5 p-3 md:p-5 items-center justify-center bg-main-400 box-border"
   >
-    <p class="text-xl md:text-3xl font-bold">{{ name }}</p>
+    <div
+      class="flex justify-center items-center gap-1 text-xl md:text-3xl font-bold"
+    >
+      <p>{{ name }}</p>
+      <i :class="icon" />
+    </div>
     <p class="text-center text-base md:text-xl font-bold text-main-800">
       {{ shortDescription }}
     </p>

@@ -23,6 +23,7 @@ const quizData = {
     "TailwindCSS",
   ],
   ariaLabel: "Trivia Quiz Site",
+  icon: "bx bx-check-circle",
 };
 const weatherData = {
   name: "Weather Forecast",
@@ -31,6 +32,7 @@ const weatherData = {
     "A weather application built with Vue 3, TypeScript, Pinia, Element Plus, and TailwindCSS. Users can search for any location to retrieve real-time weather data from the OpenWeatherMap API.",
   techStack: ["Vue.js", "TypeScript", "Pinia", "Element Plus", "TailwindCSS"],
   ariaLabel: "Weather Forecast Site",
+  icon: "bx bx-cloud-rain",
 };
 const uiData = {
   name: "UI Library",
@@ -39,6 +41,7 @@ const uiData = {
     "A custom UI component library built with Vue 3, TypeScript, and TailwindCSS. Features a flexible HSL-based color system and a suite of interactive, accessible button components ready for integration in modern web apps.",
   techStack: ["Vue.js", "TypeScript", "TailwindCSS"],
   ariaLabel: "UI Library Site",
+  icon: "bx bx-code-alt",
 };
 const monocolorData = {
   name: "Monocolor Landing Page",
@@ -47,6 +50,7 @@ const monocolorData = {
     "A minimal landing page built using just one hue. Change it manually (0–360) or enable animated color rotation.",
   techStack: ["Vue.js", "TypeScript", "TailwindCSS"],
   ariaLabel: "Monocolor Landing Page Site",
+  icon: "bx bx-palette",
 };
 
 let observer: IntersectionObserver;
