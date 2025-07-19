@@ -24,6 +24,7 @@ const quizData = {
   ],
   ariaLabel: "Trivia Quiz Site",
   icon: "bx bx-check-circle",
+  href: "https://quiz-2025.vercel.app/",
 };
 const weatherData = {
   name: "Weather Forecast",
@@ -33,6 +34,7 @@ const weatherData = {
   techStack: ["Vue.js", "TypeScript", "Pinia", "Element Plus", "TailwindCSS"],
   ariaLabel: "Weather Forecast Site",
   icon: "bx bx-cloud-rain",
+  href: "https://weather-app-jakubhajduk53s-projects.vercel.app/",
 };
 const uiData = {
   name: "UI Library",
@@ -42,6 +44,7 @@ const uiData = {
   techStack: ["Vue.js", "TypeScript", "TailwindCSS"],
   ariaLabel: "UI Library Site",
   icon: "bx bx-code-alt",
+  href: "https://my-ui-jakubhajduk53s-projects.vercel.app/",
 };
 const monocolorData = {
   name: "Monocolor Landing Page",
@@ -51,6 +54,7 @@ const monocolorData = {
   techStack: ["Vue.js", "TypeScript", "TailwindCSS"],
   ariaLabel: "Monocolor Landing Page Site",
   icon: "bx bx-palette",
+  href: "https://monocolor-landing-page.vercel.app/",
 };
 
 let observer: IntersectionObserver;
