@@ -40,3 +40,8 @@ body,
   --color-tailwindcss-dark: hsl(190, 70%, 40%);
   --color-tailwindcss-light: hsl(190, 70%, 90%);
 }
+@layer utilities {
+  .h-screen-minus-80 {
+    height: calc(100vh - 80px);
+  }
+}
