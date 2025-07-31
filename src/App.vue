@@ -8,9 +8,9 @@ import Header from "../src/components/Header.vue";
     <div>
       <Header />
       <RouterView v-slot="{ Component }">
-        <Transition name="fade-slide" mode="in-out">
-          <component :is="Component" />
-        </Transition>
+        <!-- <Transition name="fade-slide" mode="in-out"> -->
+        <component :is="Component" />
+        <!-- </Transition> -->
       </RouterView>
     </div>
   </div>

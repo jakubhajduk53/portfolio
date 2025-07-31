@@ -44,4 +44,7 @@ body,
   .h-screen-minus-80 {
     height: calc(100vh - 80px);
   }
+  .min-h-screen-minus-80 {
+    min-height: calc(100vh - 80px);
+  }
 }
