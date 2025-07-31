@@ -33,7 +33,7 @@ const techColors: Record<string, string> = {
 
 <template>
   <div
-    class="flex flex-col gap-1 md:gap-3 items-center justify-center bg-main-400 h-full overflow-y-auto"
+    class="flex flex-col gap-1 md:gap-3 items-center justify-center bg-main-400 min-h-[400px] h-full overflow-y-auto"
   >
     <div
       class="flex justify-center items-center gap-1 text-base md:text-xl font-bold"

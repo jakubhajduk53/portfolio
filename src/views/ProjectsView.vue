@@ -51,15 +51,13 @@ const monocolorData = {
 </script>
 
 <template>
-  <div id="projects" class="h-screen-minus-80">
-    <div
-      class="grid grid-cols-2 grid-rows-2 gap-3 p-3 h-full bg-radial from-main-200 to-main-300"
-    >
-      <ProjectComponent :data="quizData" />
-      <ProjectComponent :data="weatherData" />
-      <ProjectComponent :data="uiData" />
-      <ProjectComponent :data="monocolorData" />
-    </div>
+  <div
+    class="min-h-screen-minus-80 grid md:grid-cols-2 md:grid-rows-2 gap-3 p-3 h-full bg-radial from-main-200 to-main-300"
+  >
+    <ProjectComponent :data="quizData" />
+    <ProjectComponent :data="weatherData" />
+    <ProjectComponent :data="uiData" />
+    <ProjectComponent :data="monocolorData" />
   </div>
 </template>
 
