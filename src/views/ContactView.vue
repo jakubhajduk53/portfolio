@@ -2,7 +2,7 @@
 
 <template>
   <div
-    class="min-h-screen-minus-80 flex flex-col justify-center items-center text-center h-full bg-radial pattern from-main-100 to-main-200"
+    class="min-h-screen-minus-80 flex flex-col justify-center items-center text-center h-full bg-radial pattern"
   >
     <div class="flex items-center justify-center gap-1">
       <i class="bx bx-envelope" />
