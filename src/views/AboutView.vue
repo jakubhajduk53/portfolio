@@ -4,7 +4,7 @@ import { RouterLink } from "vue-router";
 
 <template>
   <div
-    class="min-h-screen-minus-80 pattern flex flex-col gap-3 md:gap-5 p-3 md:p-5 text-center items-center justify-center h-full bg-radial from-main-100 to-main-200"
+    class="min-h-screen-minus-80 pattern flex flex-col gap-3 md:gap-5 p-3 md:p-5 text-center items-center justify-center h-full"
   >
     <div>
       <p class="text-xl md:text-3xl font-bold">
@@ -20,7 +20,7 @@ import { RouterLink } from "vue-router";
     <RouterLink
       to="/projects"
       aria-label="Relocate to projects section"
-      class="flex justify-center items-center text-base md:text-xl bg-main-800 hover:bg-main-900 text-main-300 hover:text-main-200 duration-100 p-1 md:p-3 rounded-full"
+      class="flex justify-center items-center text-xl bg-main-800 hover:bg-main-900 text-main-300 hover:text-main-200 duration-100 p-2 md:p-3 rounded-full"
       ><i class="bx bx-down-arrow-alt"
     /></RouterLink>
   </div>

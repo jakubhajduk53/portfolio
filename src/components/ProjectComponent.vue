@@ -33,7 +33,7 @@ const techColors: Record<string, string> = {
 
 <template>
   <div
-    class="flex flex-col gap-1 md:gap-3 items-center justify-center bg-main-400 min-h-[400px] h-full overflow-y-auto"
+    class="flex flex-col gap-3 items-center justify-center bg-radial from-main-200 to-main-300 min-h-[400px] h-full overflow-y-auto rounded-md"
   >
     <div
       class="flex justify-center items-center gap-1 text-base md:text-xl font-bold"
@@ -52,7 +52,7 @@ const techColors: Record<string, string> = {
     >
       <span
         v-for="technology in techStack"
-        :class="`${techColors[technology]} text-sm p-1 rounded-md`"
+        :class="`${techColors[technology]} text-sm p-1 rounded-md shadow-sm`"
       >
         {{ technology }}
       </span>
@@ -61,7 +61,7 @@ const techColors: Record<string, string> = {
       :href="href"
       target="_blank"
       :aria-label="ariaLabel"
-      class="flex items-center justify-center gap-1 text-sm bg-main-800 hover:bg-main-900 text-main-300 hover:text-main-200 duration-100 p-1 md:p-3 rounded-full"
+      class="flex items-center justify-center gap-1 text-sm bg-main-800 hover:bg-main-900 text-main-300 hover:text-main-200 duration-100 p-2 md:p-3 rounded-full shadow-sm"
       >Visit website <i class="bx bx-right-top-arrow-circle text-base"></i
     ></a>
   </div>
