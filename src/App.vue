@@ -8,24 +8,27 @@ import Header from "../src/components/Header.vue";
     <div>
       <Header />
       <RouterView v-slot="{ Component }">
-        <!-- <Transition name="fade-slide" mode="in-out"> -->
-        <component :is="Component" />
-        <!-- </Transition> -->
+        <Transition name="fade-slide" mode="out-in" appear>
+          <component :is="Component" />
+        </Transition>
       </RouterView>
     </div>
   </div>
 </template>
 
 <style scoped>
-/* .fade-slide-enter-active {
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  transition-delay: 0.1s;
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.fade-slide-enter-from {
+.fade-slide-enter-from,
+.fade-slide-leave-to {
   opacity: 0;
 }
-.fade-slide-leave-from {
+
+.fade-slide-leave-from,
+.fade-slide-enter-to {
   opacity: 1;
-} */
+}
 </style>
