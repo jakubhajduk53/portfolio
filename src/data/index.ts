@@ -16,10 +16,10 @@ const quizData: ProjectData = {
   techStack: [
     "Vue.js",
     "TypeScript",
-    "Pinia",
-    "Vue Router",
-    "Element Plus",
     "TailwindCSS",
+    "Pinia",
+    "Element Plus",
+    "Vue Router",
   ],
   ariaLabel: "Trivia Quiz Site",
   icon: "bx bx-check-circle",
@@ -30,7 +30,7 @@ const weatherData: ProjectData = {
   shortDescription: "Check the weather at any location",
   description:
     "A weather application built with Vue 3, TypeScript, Pinia, Element Plus, and TailwindCSS. Users can search for any location to retrieve real-time weather data from the OpenWeatherMap API.",
-  techStack: ["Vue.js", "TypeScript", "Pinia", "Element Plus", "TailwindCSS"],
+  techStack: ["Vue.js", "TypeScript", "TailwindCSS", "Pinia", "Element Plus"],
   ariaLabel: "Weather Forecast Site",
   icon: "bx bx-cloud-rain",
   href: "https://weather-app-jakubhajduk53s-projects.vercel.app/",

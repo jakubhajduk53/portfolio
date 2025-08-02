@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import ProjectComponent from "../components/ProjectComponent.vue";
 import { quizData, weatherData, uiData, monocolorData } from "../data";
+import ProjectComponent from "../components/ProjectComponent.vue";
 </script>
 
 <template>
