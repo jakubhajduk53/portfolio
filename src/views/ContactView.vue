@@ -15,7 +15,7 @@
     </div>
     <div class="flex items-center justify-center gap-1">
       <i class="bx bx-phone" />
-      <p>+48 509 778 233</p>
+      <a href="tel:+48509778233" class="underline">+48 509 778 233</a>
     </div>
     <div class="flex items-center justify-center gap-1">
       <i class="bx bxl-github" />
@@ -30,11 +30,11 @@
     <div class="flex items-center justify-center gap-1">
       <i class="bx bxl-linkedin-square" />
       <a
-        href="https://www.linkedin.com/in/jakub-hajduk-ab0122286"
+        href="https://www.linkedin.com/in/jakubhajduk53"
         target="_blank"
         aria-label="Jakub Hajduk's LinkedIn Profile"
         class="underline"
-        >linkedin.com/in/jakub-hajduk-ab0122286/</a
+        >linkedin.com/in/jakubhajduk53/</a
       >
     </div>
   </div>
