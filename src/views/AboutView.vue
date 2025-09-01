@@ -20,7 +20,7 @@ import { RouterLink } from "vue-router";
     <RouterLink
       to="/projects"
       aria-label="Relocate to projects section"
-      class="flex justify-center items-center text-xl bg-main-800 hover:bg-main-900 text-main-300 hover:text-main-200 duration-100 p-2 md:p-3 rounded-full shadow-sm"
+      class="flex justify-center items-center text-xl bg-main-700 hover:bg-main-800 text-main-300 hover:text-main-200 duration-100 p-2 md:p-3 rounded-full shadow-sm"
       ><i class="bx bx-right-arrow-alt"
     /></RouterLink>
   </div>
